@@ -6,7 +6,8 @@ def quoter():
   f.close()
 
   rnd = random.randint(0, len(quotes) - 1)
-  print(quotes[rnd])
+  #returns quote and gets rid of newline
+  print(quotes[rnd].rstrip())
 
 if __name__== "__main__":
   quoter()
